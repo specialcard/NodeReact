@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
-import {useDispatch} from 'react-redux'
-import {registerUser} from '../../../_actionc/user_action'
+import { useDispatch } from 'react-redux'
+import { registerUser } from '../../../_actionc/user_action'
 import { withRouter } from 'react-router-dom'
 function RegisterPage(props) {
   const dispatch = useDispatch();
@@ -31,8 +31,8 @@ function RegisterPage(props) {
     }
     dispatch(registerUser(body))
     .then(res => {
-      if (res.payload.success){
-        props.history.push('/login')
+      if (res.payload.success) {
+        props.history.push('/login');
       }else{
         alert('실패')
       }

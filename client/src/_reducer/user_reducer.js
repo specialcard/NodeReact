@@ -9,7 +9,7 @@ export default function (state = {}, action) {
     case LOGIN_USER:
       return {
         ...state,
-        LoginSuccess: action.payload
+        loginSuccess: action.payload
       }
     case REGISTER_USER:
       return{
